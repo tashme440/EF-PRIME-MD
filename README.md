@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://files.catbox.moe/oifwcm.jpg" alt="Optimus Prime" width="60%"/>
+  <img src="https://files.catbox.moe/oifwcm.jpg" alt="Optimus Prime" width="70%"/>
 </p>
 
 <p align="center">
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=35&pause=1000&color=FF0000&center=true&width=1000&height=80&lines=By+Frank+Kaumba+Dev" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=FF0000&center=true&width=1000&height=80&lines=By+Frank+Kaumba+Dev" alt="Typing SVG" />
 </p>
 
 ---   
