@@ -13,7 +13,6 @@
 ---   
 
 > **`Updated To` The Ultimate Version**
-
 ---
 
 <!-- COUNT-UP TIMER -->
