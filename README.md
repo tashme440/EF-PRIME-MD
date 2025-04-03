@@ -15,14 +15,32 @@
 > **`Updated To` The Ultimate Version**
 
 ---
+
+<!-- COUNTDOWN TIMER -->
+<p align="center">
+  <a href="https://github.com/efkidgamerdev/EF-PRIME-MD">
+    <img src="https://img.shields.io/badge/LAUNCH_COUNTDOWN-T--MINUS-red?style=for-the-badge" alt="Launch Countdown"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DAYS-14-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/HOURS-08-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MINUTES-30-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SECONDS-00-blue?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-PREPARATION_PHASE-orange?style=for-the-badge" />
+</p>
+<!-- END COUNTDOWN TIMER -->
+
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3lyZm12Mm9ydWtpOGk2cTgwcG9sNjdteGU5aW5xbjAxZHM0ZnFvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wLNuW1tCKRiPmDV5Y4/giphy.gif" alt="Optimus Prime Transform" width="60%"/>
 </p>
 
 
 ---
-
-
 
 <p align="center">
   <a href="https://github.com/efkidgamerdev"><img title="Developer" src="https://img.shields.io/badge/Author-efkidgamerdev-00FFFF.svg?style=for-the-badge&logo=github" /></a>
@@ -122,4 +140,4 @@ If you face any issues, report them on GitHub or in the WhatsApp community.
 
 
 
-> Made with ♥️ by Frank kaumba dev 
+> Made with ♥️ by Frank kaumba dev
