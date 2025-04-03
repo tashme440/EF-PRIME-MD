@@ -13,9 +13,10 @@
 ---   
 
 > **`Updated To` The Ultimate Version**
+> warning don't try to change any code you will get errors 🥲
 ---
 
-<!-- COUNT-UP TIMER -->
+
 <p align="center">
   <a href="https://github.com/efkidgamerdev/EF-PRIME-MD">
     <img src="https://img.shields.io/badge/PROJECT_RUNTIME-ONLINE_FOR-00FF00?style=for-the-badge" alt="Project Runtime"/>
