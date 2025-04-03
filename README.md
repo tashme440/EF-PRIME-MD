@@ -111,9 +111,7 @@ Start by forking this repository to your own GitHub account. Click the button be
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHdwdnhzcGg0enJ5OHpxZHB3NWRjN3pvODgwOXFpZXd0eTFzZmd4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11R5KYi6ZdP8Z2/giphy.gif" alt="Roll Out" width="60%"/>
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZiazZrZ2d5c2Q5ZzlpM3l3M2M2ZjNkNHdtcnVuNm94OTUzeGVhNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zforkJi1OSgYE/giphy.gif" alt="Optimus Prime" width="70%"/>
-</p>
+
 
 🔒 Final Note
 
