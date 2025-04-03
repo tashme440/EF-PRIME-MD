@@ -61,9 +61,7 @@ Start by forking this repository to your own GitHub account. Click the button be
 <a href='https://optimus-prime-jaden.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-0000FF?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDB6Z3R0M291c3o1Z2g0OGIwMWR0MGs4MHU3cjBvZ200YjluODAwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uFi0kFnKFh8Gs/giphy.gif" alt="Optimus Battle" width="70%"/>
-</p>
+
 
 🚀 Deploy EF-PRIME-MD BOT
 
@@ -74,10 +72,7 @@ Start by forking this repository to your own GitHub account. Click the button be
 </p>
 
 > Deploy on TalkDrove
-
-<p align="left">  
-<a href='https://host.talkdrove.com/share-bot/82' target="_blank"><img alt='Deploy on TalkDrove' src='https://img.shields.io/badge/Deploy%20on-TalkDrove-FF5500?style=for-the-badge&logo=google-cloud&logoColor=white'/></a>  
-</p>
+# will be available there soon
 
 > Deploy on Koyeb
 
