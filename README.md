@@ -22,11 +22,10 @@
     <img src="https://img.shields.io/badge/PROJECT_RUNTIME-ONLINE_FOR-00FF00?style=for-the-badge" alt="Project Runtime"/>
   </a>
 </p>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=DAYS&query=days&url=https://gist.githubusercontent.com/efkidgamerdev/countup-data/raw/countup.json&color=blue" />
-  <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=HOURS&query=hours&url=https://gist.githubusercontent.com/efkidgamerdev/countup-data/raw/countup.json&color=blue" />
-  <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=MINUTES&query=minutes&url=https://gist.githubusercontent.com/efkidgamerdev/countup-data/raw/countup.json&color=blue" />
+  <a href="#"><img src="https://img.shields.io/badge/0-DAYS-blue?style=for-the-badge" alt="Days" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/11-HOURS-blue?style=for-the-badge" alt="Hours" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/47-MINUTES-blue?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue" alt="Minutes" /></a>
 </p>
 
 <p align="center">
