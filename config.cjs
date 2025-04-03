@@ -1,6 +1,6 @@
 // config.js - Optimus Prime Bot Configuration
 // Author: Frank kaumba dev
-// thanks to sir Jawad 
+
 const fs = require("fs");
 require("dotenv").config();
 const config = {
