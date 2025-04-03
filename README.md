@@ -16,9 +16,7 @@
 
 ---
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3lyZm12Mm9ydWtpOGk2cTgwcG9sNjdteGU5aW5xbjAxZHM0ZnFvdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wLNuW1tCKRiPmDV5Y4/giphy.gif" alt="Optimus Prime Transform" width="60%"/>
-</p>
+
 
 ---
 
