@@ -99,6 +99,8 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 🏆 Credits & Contributors
 
+> Thanking God for everything He has done to me ♥️
+
 > Special Thanks To
 - [Sir Jawad (JawadTechX)](https://github.com/XdTechPro)
 - helping me with the base of the bot
