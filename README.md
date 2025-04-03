@@ -89,19 +89,16 @@ Start by forking this repository to your own GitHub account. Click the button be
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXhuNXptemN4cWE1ZXcxeW5qcXJxMGczMDYzbTlhMGhoZ2NuOTljdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/krkrHAEodHgzP72rTI/giphy.gif" alt="Optimus Fighting" width="80%"/>
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXVqZ3JqbnM2cTR6bnhudmowZmd6ZnFiZzR3a2FjaGlsbnc4bjBmYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IeizTpBEYEJX4FG7qn/giphy.gif" alt="Optimus Stance" width="60%"/>
-</p>
 
 ---
 
 ⚠️ Disclaimer
 
-🔒 This bot is not affiliated with WhatsApp Inc. Use at your own risk.
+🔒 This bot has nothing to do with WhatsApp or Meta productions use wisely.
 
 🔒 Misuse can lead to WhatsApp account bans.
 
-🔒 The developer is not responsible for bans or misuse.
+🔒 The developers is not responsible for bans or misuse.
 
 ---
 
@@ -131,3 +128,4 @@ If you face any issues, report them on GitHub or in the WhatsApp community.
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxyc3EwM28xaGF4am1naWgxbXlldjRoeThobWtvZHF3cjFrN2NoaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vvVjNVBmNWzfNwxUYI/giphy.gif" alt="Optimus Transform" width="70%"/>
 </p>
+> Made with ♥️ by Frank kaumba dev 
