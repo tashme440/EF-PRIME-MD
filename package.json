@@ -11,7 +11,7 @@
   },
   "keywords": ["Primemd", "whatsapp-bot", "whatsapp md bot"],
   "author": "Frank dev",
-  "license": "ISC",
+  "license": "apache2.0",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
