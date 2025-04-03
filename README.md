@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://files.catbox.moe/oifwcm.jpg" alt="Optimus Prime" width="70%"/>
+  <img src="https://files.catbox.moe/59w3zy.jpg" alt="Optimus Prime" width="70%"/>
 </p>
 
 <p align="center">
