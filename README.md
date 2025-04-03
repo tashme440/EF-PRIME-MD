@@ -125,7 +125,6 @@ Start by forking this repository to your own GitHub account. Click the button be
 If you face any issues, report them on GitHub or in the WhatsApp community.
 "Autobots, roll out!" 🚀
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGxyc3EwM28xaGF4am1naWgxbXlldjRoeThobWtvZHF3cjFrN2NoaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vvVjNVBmNWzfNwxUYI/giphy.gif" alt="Optimus Transform" width="70%"/>
-</p>
+
+
 > Made with ♥️ by Frank kaumba dev 
