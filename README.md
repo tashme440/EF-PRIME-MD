@@ -23,9 +23,9 @@
   </a>
 </p>
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/0-DAYS-blue?style=for-the-badge" alt="Days" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/6-HOURS-blue?style=for-the-badge" alt="Hours" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/47-MINUTES-blue?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue" alt="Minutes" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/1-DAYS-blue?style=for-the-badge" alt="Days" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/2-HOURS-blue?style=for-the-badge" alt="Hours" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/410-MINUTES-blue?style=for-the-badge&logoColor=blue&labelColor=blue&color=blue" alt="Minutes" /></a>
 </p>
 
 <p align="center">
