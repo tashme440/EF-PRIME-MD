@@ -4,22 +4,19 @@ import path from "path";
 import { fileURLToPath } from 'url';
 import AdmZip from "adm-zip";
 
-// Get current directory path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Import config
 const configPath = path.join(__dirname, '../config.cjs');
 const config = await import(configPath).then(m => m.default || m).catch(() => ({}));
 
 const update = async (m, Matrix) => {
-    const prefix = config.PREFIX || '.'; // Default prefix if not in config
+    const prefix = config.PREFIX || '.';
     const cmd = m.body.startsWith(prefix)
         ? m.body.slice(prefix.length).split(" ")[0].toLowerCase()
         : "";
 
     if (cmd === "update") {
-        // Only allow the bot itself to use this command
         const botNumber = await Matrix.decodeJid(Matrix.user.id);
         if (m.sender !== botNumber) {
             return Matrix.sendMessage(m.from, { text: "❌ *Only the bot itself can use this command!*" }, { quoted: m });
@@ -39,13 +36,11 @@ const update = async (m, Matrix) => {
                 }
             };
 
-            // Fetch latest commit hash
             const { data: commitData } = await axios.get(
                 "https://api.github.com/repos/efkidgamerdev/EF-PRIME-MD/commits/main"
             );
             const latestCommitHash = commitData.sha;
 
-            // Load package.json
             const packageJsonPath = path.join(process.cwd(), "package.json");
             const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
             const currentHash = packageJson.commitHash || "unknown";
@@ -57,7 +52,6 @@ const update = async (m, Matrix) => {
 
             await editMessage("```🚀 New update found! Downloading...```");
 
-            // Download latest ZIP
             const zipPath = path.join(process.cwd(), "latest.zip");
             const writer = fs.createWriteStream(zipPath);
             
@@ -76,22 +70,18 @@ const update = async (m, Matrix) => {
 
             await editMessage("```📦 Extracting the latest code...```");
 
-            // Extract ZIP
             const extractPath = path.join(process.cwd(), "latest");
             const zip = new AdmZip(zipPath);
             zip.extractAllTo(extractPath, true);
 
             await editMessage("```🔄 Replacing files...```");
 
-            // Replace files while skipping important configs
-            const sourcePath = path.join(extractPath, "EF-PRIME-MD main");
+            const sourcePath = path.join(extractPath, "EF-PRIME-MD-main");
             await copyFolderSync(sourcePath, process.cwd(), ['package.json', 'config.cjs', '.env']);
 
-            // Update package.json with new commit hash
             packageJson.commitHash = latestCommitHash;
             fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-            // Cleanup
             fs.unlinkSync(zipPath);
             fs.rmSync(extractPath, { recursive: true, force: true });
 
@@ -130,4 +120,4 @@ async function copyFolderSync(source, target, filesToSkip = []) {
     }
 }
 
-export default update; 
+export default update;
