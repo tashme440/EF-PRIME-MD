@@ -32,15 +32,15 @@ const ai = async (m, gss) => {
 
     try {
 
-      m.reply(`ðŸ¤– Processing your request with ${selectedModel}...`);
+      m.reply(`🤖 Processing your request with ${selectedModel}...`);
 
       const apiUrl = `https://kaiz-apis.gleeze.com/api/${selectedModel}?ask=${encodeURIComponent(args)}`;
 
       const { data } = await axios.get(apiUrl);
 
-      if (!data || !data.response) return m.reply(`âŒ No response from ${selectedModel}.`);
+      if (!data || !data.response) return m.reply(`❌ No response from ${selectedModel}.`);
 
-      const responseText = `ðŸ¤– *${selectedModel.toUpperCase()}*\n\n${data.response}`;
+      const responseText = `🤖 *${selectedModel.toUpperCase()}*\n\n${data.response}`;
 
       await gss.sendMessage(
 
@@ -80,7 +80,7 @@ const ai = async (m, gss) => {
 
       console.error(error);
 
-      m.reply(`âŒ An error occurred with ${selectedModel}: ${error.message}`);
+      m.reply(`❌ An error occurred with ${selectedModel}: ${error.message}`);
 
     }
 
