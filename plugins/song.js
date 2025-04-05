@@ -15,26 +15,35 @@ const play2 = async (m, gss) => {
 
       let videoUrl;
       
-      // Check if input is a YouTube URL
       if (args.match(/(youtube\.com|youtu\.be)/)) {
         videoUrl = args;
       } else {
-        // Search YouTube if input is text
         const searchResults = await yts(args);
         if (!searchResults.videos.length) return m.reply("❌ No results found");
         videoUrl = searchResults.videos[0].url;
       }
 
-      const apiUrl = `https://api.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(videoUrl)}`;
+      const apiUrl = `https://kaiz-apis.gleeze.com/api/ytmp3?url=${encodeURIComponent(videoUrl)}`;
       const { data } = await axios.get(apiUrl);
 
-      if (!data.success) return m.reply("❌ Failed to download audio");
+      if (!data.download_url) return m.reply("❌ Failed to download audio");
 
       await gss.sendMessage(
         m.from,
         { 
-          audio: { url: data.result.downloadUrl },
-          mimetype: 'audio/mpeg'
+          audio: { url: data.download_url },
+          mimetype: 'audio/mpeg',
+          fileName: data.title || "audio.mp3",
+          contextInfo: {
+            mentionedJid: [m.sender],
+            forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363419090892208@newsletter',
+              newsletterName: "EF-PRIME",
+              serverMessageId: 143
+            }
+          }
         },
         { quoted: m }
       );
@@ -47,4 +56,3 @@ const play2 = async (m, gss) => {
 };
 
 export default play2;
-
