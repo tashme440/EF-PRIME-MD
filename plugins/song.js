@@ -2,57 +2,63 @@ import axios from "axios";
 import yts from "yt-search";
 import config from '../config.cjs';
 
-const play2 = async (m, gss) => {
+const playOrSong = async (m, gss) => {
   const prefix = config.PREFIX;
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
-  const args = m.body.slice(prefix.length + cmd.length).trim();
+  const args = m.body.slice(prefix.length + cmd.length).trim().split(" ");
 
-  if (cmd === "song") {
-    if (!args) return m.reply("Please provide a YouTube link or song name\nExample: .song Moye Moye\nOr: .song https://youtu.be/xyz");
+  if (cmd === "play" || cmd === "song") {
+    if (args.length === 0 || !args.join(" ")) {
+      return m.reply("*Please provide a song name or keywords to search for.*");
+    }
+
+    const searchQuery = args.join(" ");
+    m.reply("*🎧 Searching for the song...*");
 
     try {
-      m.reply("🔍 Processing your request...");
-
-      let videoUrl;
-      
-      if (args.match(/(youtube\.com|youtu\.be)/)) {
-        videoUrl = args;
-      } else {
-        const searchResults = await yts(args);
-        if (!searchResults.videos.length) return m.reply("❌ No results found");
-        videoUrl = searchResults.videos[0].url;
+      const searchResults = await yts(searchQuery);
+      if (!searchResults.videos || searchResults.videos.length === 0) {
+        return m.reply(`❌ No results found for "${searchQuery}".`);
       }
 
-      const apiUrl = `https://kaiz-apis.gleeze.com/api/ytmp3?url=${encodeURIComponent(videoUrl)}`;
-      const { data } = await axios.get(apiUrl);
+      const firstResult = searchResults.videos[0];
+      const videoUrl = firstResult.url;
 
-      if (!data.download_url) return m.reply("❌ Failed to download audio");
+      const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${videoUrl}`;
+      const response = await axios.get(apiUrl);
+
+      if (!response.data.success) {
+        return m.reply(`❌ Failed to fetch audio for "${searchQuery}".`);
+      }
+
+      const { title, download_url } = response.data.result;
 
       await gss.sendMessage(
         m.from,
-        { 
-          audio: { url: data.download_url },
-          mimetype: 'audio/mpeg',
-          fileName: data.title || "audio.mp3",
+        {
+          audio: { url: download_url },
+          mimetype: "audio/mp4",
+          ptt: false,
+        },
+        {
+          quoted: m,
           contextInfo: {
             mentionedJid: [m.sender],
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: '120363419090892208@newsletter',
-              newsletterName: "EF-PRIME",
-              serverMessageId: 143
-            }
-          }
-        },
-        { quoted: m }
+              newsletterName: "EF-SONG-PLAY",
+              serverMessageId: 144,
+            },
+          },
+        }
       );
-
     } catch (error) {
       console.error(error);
-      m.reply("❌ An error occurred: " + error.message);
+      m.reply("❌ An error occurred while processing your request.");
     }
   }
 };
 
-export default play2;
+export default playOrSong;
