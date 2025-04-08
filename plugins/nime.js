@@ -10,7 +10,7 @@ const mal = async (m, gss) => {
 
   const args = m.body.slice(prefix.length + cmd.length).trim();
 
-  if (cmd === "mal") {
+  if (cmd === "anime") {
 
     if (!args) return m.reply("Please provide an anime title\nExample: .mal Jujutsu Kaisen");
 
